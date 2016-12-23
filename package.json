@@ -7,7 +7,8 @@
   "scripts": {
     "html": "mkdir -p build && cp src/index.html build/",
     "webpack": "webpack -p -d --progress --colors",
-    "start": "npm-run-all html webpack",
+    "serve": "serve build/",
+    "start": "npm-run-all html webpack serve",
     "dev": "webpack-dev-server --hot"
   },
   "dependencies": {
