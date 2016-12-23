@@ -4,7 +4,7 @@ var path = require('path')
 module.exports = {
   entry: './src/index',
   output: {
-    path: path.join(__dirname, 'lib'),
+    path: path.join(__dirname, 'build'),
     filename: 'snow.js'
   },
   module: {
@@ -22,7 +22,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: './lib',
+    contentBase: './build',
     port: 8080,
     hot: true,
     inline: true
