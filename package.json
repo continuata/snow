@@ -7,6 +7,7 @@
   "scripts": {
     "html": "mkdir -p build && cp src/index.html build/",
     "webpack": "webpack -p -d --progress --colors",
+    "start": "serve build/",
     "build": "npm-run-all html webpack",
     "dev": "webpack-dev-server --hot"
   },
@@ -20,6 +21,7 @@
     "babel-register": "^6.18.0",
     "jquery": "^3.1.1",
     "npm-run-all": "^3.1.2",
+    "serve": "^2.1.2",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }
